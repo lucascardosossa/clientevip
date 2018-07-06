@@ -9,4 +9,46 @@
     <PackageReference Include="Prism.Unity.Forms" Version="7.0.0.396" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\LoginPage.xaml" />
+    <EmbeddedResource Remove="Views\SigninPage.xaml" />
+    <EmbeddedResource Remove="Views\SignupPage.xaml" />
+    <EmbeddedResource Remove="Views\AccountPage.xaml" />
+    <EmbeddedResource Remove="Views\HomePage.xaml" />
+    <EmbeddedResource Remove="Views\CardPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\LoginPage.xaml" />
+    <None Include="Views\SigninPage.xaml" />
+    <None Include="Views\SignupPage.xaml" />
+    <None Include="Views\AccountPage.xaml" />
+    <None Include="Views\HomePage.xaml" />
+    <None Include="Views\CardPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SigninPage.xaml.cs">
+      <DependentUpon>SigninPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SignupPage.xaml.cs">
+      <DependentUpon>SignupPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DashboardPage.xaml.cs">
+      <DependentUpon>DashboardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AccountPage.xaml.cs">
+      <DependentUpon>AccountPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\CardPage.xaml.cs">
+      <DependentUpon>CardPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

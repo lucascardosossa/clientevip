@@ -11,6 +11,8 @@ namespace clientevip.ViewModels
 {
     public class DashboardPageViewModel : ViewModelBase
     {
-        
+        public DashboardPageViewModel(INavigationService navigationService) : base(navigationService)
+        {
+        }
     }
 }

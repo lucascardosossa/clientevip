@@ -11,6 +11,8 @@ namespace clientevip.ViewModels
 {
     public class SigninPageViewModel : ViewModelBase
     {
-        
+        public SigninPageViewModel(INavigationService navigationService) : base(navigationService)
+        {
+        }
     }
 }

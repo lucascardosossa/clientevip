@@ -11,6 +11,8 @@ namespace clientevip.ViewModels
 {
     public class CardPageViewModel : ViewModelBase
     {
-        
+        public CardPageViewModel(INavigationService navigationService) : base(navigationService)
+        {
+        }
     }
 }
