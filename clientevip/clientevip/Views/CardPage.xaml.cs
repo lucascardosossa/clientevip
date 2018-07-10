@@ -1,8 +1,11 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using System.Collections.Generic;
+
+using Xamarin.Forms;
 
 namespace clientevip.Views
 {
-    public partial class CardPage : NavigationPage
+    public partial class CardPage : ContentPage
     {
         public CardPage()
         {

@@ -1,8 +1,11 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using System.Collections.Generic;
+
+using Xamarin.Forms;
 
 namespace clientevip.Views
 {
-    public partial class SignupPage : NavigationPage
+    public partial class SignupPage : ContentPage
     {
         public SignupPage()
         {
